@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for YouTube Shorts Auto-Swiper for Chrome and Firefox: local playback processing, local settings, no developer telemetry.">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy | YouTube Shorts Auto-Swiper</title>
+  <style>
+    :root { --paper: #f8f6ee; --ink: #243a32; --muted: #53675e; --line: #d3ddd1; --accent: #17644c; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: radial-gradient(ellipse at top right, #e3eddd, transparent 65%), var(--paper); color: var(--ink); font: 18px/1.7 Georgia, "Times New Roman", serif; }
+    main { max-width: 860px; margin: 0 auto; padding: 56px 28px 72px; }
+    header { padding-bottom: 32px; border-bottom: 2px solid var(--accent); }
+    .eyebrow, nav, .meta, footer { font-family: "Segoe UI", sans-serif; font-size: 14px; }
+    .eyebrow { color: var(--accent); letter-spacing: .12em; text-transform: uppercase; }
+    h1 { font-size: clamp(36px, 7vw, 56px); line-height: 1.12; margin: 18px 0; font-weight: 500; }
+    h2 { font-size: 30px; line-height: 1.25; margin-top: 48px; }
+    h3 { font-size: 22px; line-height: 1.35; margin-top: 28px; }
+    p { margin: 14px 0; }
+    a { color: var(--accent); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    nav { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 24px; }
+    .meta { color: var(--muted); }
+    .summary { padding: 18px 22px; border-left: 4px solid var(--accent); background: #eef2e8; }
+    li { margin: 8px 0; }
+    code { font-size: .85em; overflow-wrap: anywhere; }
+    section + section { border-top: 1px solid var(--line); margin-top: 48px; }
+    footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px; color: var(--muted); }
+    @media (max-width: 480px) { main { padding: 32px 20px 48px; } body { font-size: 17px; } }
+    @media print { body { background: white; color: black; } main { max-width: none; padding: 0; } nav { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">YouTube Shorts Auto-Swiper</div>
+      <h1>Privacy Policy</h1>
+      <p>For the Chrome and Firefox browser extension.</p>
+      <p class="meta">Effective date: <time datetime="2026-11-02">November 2, 2026</time>. Applies to version 1.0.7.</p>
+      <nav aria-label="Policy languages">
+        <a href="#english" lang="en">English</a>
+        <a href="#ukrainian" lang="uk">Українська</a>
+      </nav>
+    </header>
+
+    <section id="english" lang="en" aria-labelledby="english-title">
+      <h2 id="english-title">English</h2>
+      <p class="summary">The extension processes playback and navigation information locally to control YouTube Shorts. It saves only your settings. It does not send viewing history, interaction logs, or page content to the developer or third parties, and contains no analytics or tracking code.</p>
+
+      <h3>1. Publisher and purpose</h3>
+      <p>YouTube Shorts Auto-Swiper is maintained by the GitHub account <a href="https://github.com/korshunov-olexiy">korshunov-olexiy</a> and listed by the Chrome Web Store publisher devwebua1. Its purpose is to control navigation in the YouTube Shorts feed: advance after a video ends, optionally skip advertising Shorts, and seek using the arrow keys.</p>
+
+      <h3>2. Information processed on your device</h3>
+      <p>While operating on YouTube, the extension uses the following information only within your browser:</p>
+      <ul>
+        <li>The current page path or Shorts address and the current video source, to detect navigation and changes of video.</li>
+        <li>Playback state such as current time, duration, paused/loading status, and completion or looping, to determine when to advance.</li>
+        <li>Page structure and advertising markers, video visibility, and navigation controls, to identify the active video and advertising Shorts.</li>
+        <li>Keyboard, pointer, wheel, and touch events used to handle navigation or seeking and prevent duplicate automatic transitions. The extension does not record a keystroke or interaction history and does not read text typed into input fields.</li>
+      </ul>
+      <p>This information is used transiently for the extension's features. It is not stored as a browsing or viewing history, sent to a server, or made available to the developer. The extension does not request the browser history permission, read account credentials or cookies, or maintain user profiles.</p>
+
+      <h3>3. Settings stored locally</h3>
+      <p>The extension stores three preferences using <code>chrome.storage.local</code> or the equivalent Firefox storage API: automatic switching on/off, advertising-video skipping on/off, and the seek interval in seconds. They remain on your device across browser sessions and are not synchronized by this extension to a developer server or browser sync storage.</p>
+      <p>Settings remain until changed, removed through your browser's extension-storage controls, or removed when the extension is uninstalled. Temporary playback state is reset as playback or navigation changes and is discarded when the page closes.</p>
+
+      <h3>4. Permissions</h3>
+      <ul>
+        <li><strong>Storage:</strong> save and apply the preferences described above.</li>
+        <li><strong>Access to youtube.com and its subdomains:</strong> detect navigation into Shorts, inspect the player and ad markers, and activate the next-video control. Page-access permissions do not grant access to other websites.</li>
+      </ul>
+      <p>The extension's executable code is bundled with the extension. It does not download remote executable code.</p>
+
+      <h3>5. Sharing, analytics, and limited use</h3>
+      <p>The extension does not send the information described above to the developer or third parties, sell it, use it for advertising, or use it for creditworthiness decisions. It contains no telemetry, analytics SDK, or user-tracking code. Any use of locally processed information is limited to providing the disclosed Shorts playback and navigation features, consistent with the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+      <p>Chrome Web Store listing and installation statistics are separate from the extension. Google may process store interactions under its own policies; this does not add analytics code to the extension.</p>
+
+      <h3>6. Third-party websites</h3>
+      <p>YouTube operates independently and processes its own website activity under Google's policies. Ad skipping navigates past detected advertising Shorts; it does not block YouTube's network requests or remove sponsorships inside creators' videos.</p>
+      <p>If you choose to open the optional Ko-fi support link in the popup, you visit an external website governed by its own privacy policy. This policy page is hosted by GitHub Pages; GitHub may process ordinary hosting request information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. This page itself uses no JavaScript, analytics, cookies, or externally loaded fonts or images.</p>
+
+      <h3>7. Your controls</h3>
+      <p>Automatic switching and ad skipping have independent switches in the extension popup. Disable both to stop both automatic features. You can change the seek interval, restrict the extension's site access through your browser, or uninstall the extension at any time. There is no developer-held viewing history or account database to request or delete.</p>
+
+      <h3>8. Changes and contact</h3>
+      <p>This page will be updated if the extension's data practices change; the effective date and applicable version will identify the update. For privacy questions, <a href="https://github.com/korshunov-olexiy/youtubeshorts-swiper-privacy/issues">open an issue in the privacy-policy repository</a>. Issues are public: do not include credentials, viewing history, or other sensitive personal information.</p>
+    </section>
+
+    <section id="ukrainian" lang="uk" aria-labelledby="ukrainian-title">
+      <h2 id="ukrainian-title">Політика конфіденційності</h2>
+      <p class="meta">Дата набрання чинності: 2 листопада 2026 року. Для версії 1.0.7 розширення Chrome та Firefox.</p>
+      <p class="summary">Розширення локально обробляє стан відтворення та команди навігації для керування YouTube Shorts. Зберігаються лише налаштування. Історія переглядів, журнали дій та вміст сторінок не передаються розробнику або третім особам. Розширення не містить коду аналітики чи відстеження.</p>
+
+      <h3>1. Видавець і призначення</h3>
+      <p>YouTube Shorts Auto-Swiper підтримується обліковим записом GitHub <a href="https://github.com/korshunov-olexiy">korshunov-olexiy</a> і розповсюджується видавцем Chrome Web Store devwebua1. Призначення розширення: керування стрічкою YouTube Shorts, зокрема перехід після завершення відео, необов'язковий пропуск рекламних Shorts та перемотування клавішами зі стрілками.</p>
+
+      <h3>2. Локальна обробка інформації</h3>
+      <p>Під час роботи на YouTube розширення використовує лише всередині браузера:</p>
+      <ul>
+        <li>Поточний шлях сторінки або адресу Short і джерело поточного відео, щоб визначати навігацію та зміну відео.</li>
+        <li>Час, тривалість і стан відтворення, завантаження, завершення або повторення відео, щоб визначати момент переходу.</li>
+        <li>Структуру сторінки, рекламні DOM-ознаки, видимість відео та кнопки навігації, щоб знаходити активне відео й рекламні вставки.</li>
+        <li>Події клавіатури, вказівника, колеса миші та дотиків для навігації, перемотування й запобігання подвійним переходам. Історія натискань або дій не записується; текст, введений у поля вводу, не зчитується.</li>
+      </ul>
+      <p>Ці відомості тимчасово обробляються для роботи функцій. Вони не записуються як історія браузера чи переглядів, не передаються на сервер і недоступні розробнику. Розширення не запитує дозвіл на історію браузера, не читає облікові дані чи cookies та не створює профілі користувачів.</p>
+
+      <h3>3. Налаштування та строк зберігання</h3>
+      <p>Через <code>chrome.storage.local</code> або відповідний API Firefox зберігаються три параметри: стан автоматичного перемикання, стан пропуску рекламних відео та інтервал перемотування в секундах. Налаштування залишаються на пристрої між сеансами браузера. Розширення не передає їх на сервер розробника й не використовує сховище синхронізації браузера.</p>
+      <p>Налаштування зберігаються до зміни або очищення засобами браузера чи видалення розширення. Тимчасовий стан програвача скидається при змінах відтворення або навігації та видаляється при закритті сторінки.</p>
+
+      <h3>4. Дозволи</h3>
+      <ul>
+        <li><strong>Сховище:</strong> збереження та застосування налаштувань.</li>
+        <li><strong>Доступ до youtube.com та його піддоменів:</strong> визначення переходу в Shorts, перевірка стану програвача й рекламних ознак, натискання кнопки наступного відео. Доступ до інших сайтів не запитується.</li>
+      </ul>
+      <p>Виконуваний код входить до пакета розширення. Віддалений виконуваний код не завантажується.</p>
+
+      <h3>5. Передавання даних та аналітика</h3>
+      <p>Описані відомості не передаються розробнику або третім особам, не продаються, не використовуються для реклами чи оцінки кредитоспроможності. Телеметрія, аналітичні SDK і код відстеження відсутні. Локальна обробка обмежена заявленими функціями керування відтворенням і навігації Shorts відповідно до Chrome Web Store User Data Policy, включно з вимогами Limited Use.</p>
+      <p>Статистика сторінки магазину та встановлень відокремлена від розширення. Google може обробляти взаємодії з магазином за власними правилами; це не додає коду аналітики до розширення.</p>
+
+      <h3>6. Сторонні сервіси</h3>
+      <p>YouTube самостійно обробляє дії на своєму сайті за правилами Google. Пропуск реклами означає перехід до наступного Short після розпізнавання рекламної вставки, а не блокування мережевих запитів або видалення спонсорських інтеграцій усередині авторських відео.</p>
+      <p>Добровільне натискання посилання підтримки Ko-fi відкриває сторонній сайт із власною політикою. Цю сторінку розміщено на GitHub Pages; GitHub може обробляти звичайні відомості про запити до хостингу відповідно до <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">політики GitHub</a>. Сама сторінка не використовує JavaScript, аналітику, cookies або зовнішні шрифти чи зображення.</p>
+
+      <h3>7. Ваш контроль</h3>
+      <p>Автоматичне перемикання та пропуск реклами мають незалежні перемикачі. Вимкніть обидва, щоб зупинити обидві автоматичні функції. Ви можете змінити інтервал перемотування, обмежити доступ розширення до сайтів у браузері або видалити розширення. У розробника немає бази облікових записів чи історії переглядів для надання або видалення.</p>
+
+      <h3>8. Зміни та зв'язок</h3>
+      <p>У разі зміни правил обробки даних буде оновлено цю сторінку, дату та версію розширення. Із запитаннями щодо конфіденційності <a href="https://github.com/korshunov-olexiy/youtubeshorts-swiper-privacy/issues">створіть звернення в репозиторії політики</a>. Звернення публічні: не додавайте паролі, історію переглядів або інші чутливі персональні відомості.</p>
+    </section>
+
+    <footer>YouTube Shorts Auto-Swiper is an independent extension, not affiliated with or endorsed by YouTube or Google.</footer>
+  </main>
+</body>
+</html>
